@@ -45,8 +45,8 @@ sudo apt-get -y purge thunderbird* pidgin* gwibber* rhythmbox* ubuntuone* empath
 
 sudo apt-get -y dist-upgrade
 
-git config --global user.email "tony.baltovski@gmail.com"
-git config --global user.name "Tony Baltovski"
+git config --global user.email "mcote@clearpathrobotics.com"
+git config --global user.name "Martin Cote"
 git config --global credential.helper cache
 
 sudo echo "hardstatus alwayslastline '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR} (%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}] %{=b C}[ %m/%d %c ]%{W}'
