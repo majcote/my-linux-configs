@@ -29,6 +29,9 @@ fi
 # Atom editor
 sudo add-apt-repository -y ppa:webupd8team/atom
 
+# Numix themes
+sudo add-apt-repository ppa:numix/ppa
+
 # Chrome
 wget -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
@@ -37,9 +40,9 @@ echo "[Updating the packages]"
 sudo apt-get -qq update
 
 echo "[Installing the packages]"
-sudo apt-get install -y gnome-session-fallback arduino guake terminator gedit-plugins retext openssh-server git qtcreator \
+sudo apt-get install -y arduino guake terminator gedit-plugins retext openssh-server git qtcreator \
                      vlc diffuse cutecom nautilus-open-terminal rabbitvcs-* xfsdump xfsprogs atom can-utils indicator-multiload \
-		     indicator-cpufreq screen sshfs
+		     indicator-cpufreq screen sshfs numix-gtk-theme numix-icon-theme-circle unity-tweak-tool
 
 sudo apt-get -y purge thunderbird* pidgin* gwibber* rhythmbox* ubuntuone* empathy* totem*
 
